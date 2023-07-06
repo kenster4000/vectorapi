@@ -64,8 +64,10 @@ app.post('/convert', upload.single('image'), (req, res) => {
   });
 });
 
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 3000; // use the PORT variable if it's defined, otherwise default to 3000
+
 app.listen(port, () => {
   console.log(`Server listening on port ${port}`);
 });
+
 
